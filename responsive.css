@@ -1,0 +1,94 @@
+/* iPhone 5 and newer (landscape) + Androids */
+@media all and (max-width: 568px), only screen and (min-device-width: 640px) and (max-device-width: 1136px) and (-webkit-min-device-pixel-ratio: 2) {
+  .mobile-only {
+    display:block;
+  }
+  td.mobile-only {
+    display:table-cell;
+  }
+  .desktop-only {
+    display:none;
+  }
+}
+
+/* iPhone 4 and older (landscape), most Androids */
+@media only screen and (max-device-width: 480px) {
+  .class {
+    display:block;
+  }
+}
+
+/* iPhone 4 and older (portrait), most Androids */
+@media only screen and (max-device-width: 320px) {
+  .class {
+    display:block;
+  }
+}
+
+/* iPad [portrait + landscape] */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .class {
+    display:block;
+  }
+}
+
+
+/* ----------  ** ALT if you want visible in browser (uncomment to use these instead) ** ----------*/
+
+/* iPhone 4 and older (landscape), most Androids */ /*
+
+@media all and (max-width: 480px) {
+  .class {
+    display:block;
+  }
+}
+
+*/
+
+/* iPhone 4 and older (portrait), most Androids */ /* 
+
+@media all and (max-width: 320px) {
+  .class {
+    display:block;
+  }
+}
+
+*/
+
+
+/* Desktop overrides */
+@media all and (min-width: 568px) and (min-device-width: 769px) {
+  .mobile-only {
+    display:none;
+  }
+  .desktop-only {
+    display:block;
+  }
+  .btn.desktop-only {
+    display:inline;
+  }
+  th.desktop-only,td.desktop-only {
+    display:table-cell;
+  }
+}
+
+/* --------------------- Android Devices --------------------- */
+
+/* Put CSS for low density (ldpi) Android layouts in here */
+@media only screen and (-webkit-device-pixel-ratio:.75){
+  .class {
+    display:block;
+  }    
+}
+/* Put CSS for medium density (mdpi) Android layouts in here */
+@media only screen and (-webkit-device-pixel-ratio:1){
+  .class {
+    display:block;
+  }
+}
+/* Put CSS for high density (hdpi) Android layouts in here */
+@media only screen and (-webkit-device-pixel-ratio:1.5){
+  .class {
+    display:block;
+  }
+}
